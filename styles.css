@@ -1,58 +1,74 @@
 * {
-  margin: 0px;
-  padding: 0px;
-  font-family: Viga;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-body {
-  
-  background: whitesmoke;
-  height: 637px;
+section {
+  background-color: whitesmoke;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.main {
+.container {
+  width: 40%;
+  max-width: 400px;
+  background-color: rgb(113, 121, 126);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.display {
+  background-color: rgb(229, 228, 226);
+  height: 100px;
+  width: 100%;
+  text-align: right;
+  padding: 20px;
+  font-size: 30px;
+  position: relative;
+}
+
+.display-1 {
+  opacity: 0.4;
+  font-size: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.hasil-sementara {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  width: fixed;
-  background: rgba(0,0,0,0.4);
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px;
+  bottom: 0;
+  left: 10;
+  font-size: 20px;
+  opacity: 0.3;
 }
 
-.main h2 {
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
+.all_button {
+  color: ghostwhite;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
 }
 
 .button {
-  width: 50px;
-  height: 50px;
-  font-size: 25px;
-  margin: 2px;
+  border: 0.5px solid rgba(92, 92, 92, 0.137);
+  display: inline-block;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
   cursor: pointer;
-  border: none;
-  background: #607d8b;
-  color: white;
-  border-radius: 25px;
-  
 }
 
-.btn-green {
-  background:lightgreen;
-  color:#607d8b;
+.button:hover {
+  background-color: rgb(169, 169, 169);
 }
 
-.textarea {
-  width: 204px;
-  margin: 4px;
-  font-size: 20px;
-  padding: 10px;
-  border: none;
-  color: #607d8b;
-  border-radius: 25px;
-  text-align: right;
+.btn-0 {
+  grid-column: 1/3;
 }
